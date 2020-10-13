@@ -22,14 +22,17 @@ def start_here():
     <div>
     <a href="/hello">Hi! This is the home page.</a>
     </div>
+  
     </html>"""
     
 
 @app.route('/hello')
 def say_hello():
     """Say hello and prompt for user's name."""
+    
+    
 
-    return """
+    return f"""
     <!doctype html>
     <html>
       <head>
@@ -38,13 +41,31 @@ def say_hello():
       <body>
         <h1>Hi There!</h1>
         <form action="/greet">
-          What's your name? <input type="text" name="person">
+          <p><label for="enter-name">What's your name?:</label>
+            <input type="text" name="enter-name">
+          </p>
+          
+          <p><label for="choose-compliment">Choose a compliment!</label>
+            <select> name="choose-compliment" id="compliment-selection" 
+           {awesome_option_creation()}
+            </select
+          
+          </p>
           <input type="submit" value="Submit">
         </form>
       </body>
     </html>
     """
 
+def awesome_option_creation():
+  """"""
+  value = ""
+
+  for awe in AWESOMENESS:
+    value += f'<option value="{awe}">{awe.capitalize()}</option>'
+  
+
+  return value
 
 @app.route('/greet')
 def greet_person():

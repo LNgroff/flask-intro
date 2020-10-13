@@ -1,0 +1,13 @@
+ <option value="awesome">Awesome</option>
+            <option value="terrific">Terrific</option>
+            <option value="fantastic">Fantastic</option>
+            <option value="neato">Neato</option>
+            <option value="fantabulous">Fantabulous</option>
+            <option value="wowza">Wowza</option>
+            <option value="oh-so-not-meh">Oh-so-not-meh</option>
+            <option value="brilliant">Brilliant</option>
+            <option value="coolio">Coolio</option>
+            <option value="incredible">Incredible</option>
+            <option value="wonderful">Wonderful</option>
+            <option value="smashing">Smashing</option>
+            <option value="lovely">Lovely</option>
